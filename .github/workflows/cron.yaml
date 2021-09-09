@@ -1,0 +1,19 @@
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '45 17 * * *'
+
+
+name: cron
+
+jobs:
+  cron:
+    runs-on: ubuntu-20.04
+    steps:
+      - run: |
+          echo "Hello ${{ github.event.inputs.name }}!"
+          echo "- in ${{ github.event.inputs.home }}!"
+          echo "ran on $(hostname) under $(cat /etc/issue)"
+          echo "ran at $(date)"
