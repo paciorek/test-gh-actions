@@ -20,4 +20,4 @@ jobs:
           echo "- in response to ${{ github.event_name }}"
           echo "ran on $(hostname) under $(cat /etc/issue)"
           echo "ran at $(date)"
-          echo "$(which python)"
+          echo "$(which python) $(python --version)"
