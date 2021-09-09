@@ -13,8 +13,10 @@ jobs:
     name: "my cron"
     runs-on: ubuntu-20.04
     steps:
+      - name: first step
       - run: |
-          echo "Hello from ${{ github.event.name }}!"
-          echo "- in ${{ github.event.jobs.cron.name }}!"
+          echo "Hello from ${{ github.repository }}!"
+          echo "- in job ${{ job.name }}!"
+          echo "- in response to ${{ github.event_name }}"
           echo "ran on $(hostname) under $(cat /etc/issue)"
           echo "ran at $(date)"
