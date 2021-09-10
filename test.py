@@ -48,7 +48,7 @@ def main():
         print('Found %s rows' % str(l-1))
         print('Last row is: %s, %s' % (values[l-1][0], values[l-1][1]))
 
-        if values[0][3] != "processedX":
+        if values[0][3] != "processed":
             raise Exception("Fourth column in sheet is not 'processed'.")
         lens = [len(x) for x in values]
         unprocessed = np.where(np.array(lens) == 3)
