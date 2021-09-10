@@ -68,7 +68,7 @@ def main():
 
             ## modify README
             now = datetime.now()
-            dt_string = now.strftime("%d-%m-%Y %H:%M:%S")
+            dt_string = now.strftime("%Y-%m-%d %H:%M:%S")
             
             numberLine = 'sed -i "s/^Number of sheet entries:.*/Number of sheet entries: ' + str(l-1) + '/" README.md'
             dateLine = 'sed -i "s/^Last entry processed:.*/Last entry processed: ' + dt_string + '/" README.md'
