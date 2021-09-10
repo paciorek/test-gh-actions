@@ -1,20 +1,18 @@
+#!/usr/bin/env python
+
 ## need to create a service account under a project (e.g., GVM0),
 ## enable API access in the service account, grant user access
 ## get credentials.json by creating an OAuth client id (I called it Desktop client)
 ## this then will open an authentication browser window where I can use various user IDs
 ## So the idea is the app I am creating will work for any user.
 
-## pip install --user --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+## pip install --user --upgrade google-api-python-client google-auth-oauthlib
 ## pip install  --user --upgrade google-auth
 ## pip install --user --upgrade cachetools
-## pip install --user --upgrae oauthlib
+## pip install --user --upgrade oauthlib
 
-
-from __future__ import print_function
 import os.path
 from googleapiclient.discovery import build
-from google_auth_oauthlib.flow import InstalledAppFlow
-from google.auth.transport.requests import Request
 from google.oauth2.service_account import Credentials
 
 import pdb
