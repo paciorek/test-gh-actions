@@ -52,7 +52,7 @@ def main():
             raise Exception("Fourth column in sheet is not 'processed'.")
         lens = [len(x) for x in values]
         unprocessed = np.where(np.array(lens) == 3)
-        if len(unprocessed[0]) >= 1):
+        if len(unprocessed[0]) >= 1:
             ## update spreadsheet processed column
             st = np.min(unprocessed) + 1
             end = np.max(unprocessed) + 1
