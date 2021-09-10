@@ -75,6 +75,7 @@ def main():
             
             os.system(numberLine)
             os.system(dateLine)
+            os.system("touch UPDATED")
 
         if(l == 2000):
             raise Exception("Full spreadsheet not read")
