@@ -5,6 +5,6 @@ This repository contains code that runs a GH Action as a cron job or on a push. 
 
 Here's a test of the functionality of the Action. 
 
-Number of sheet entries: 3
+Number of sheet entries: 4
 
-Last entry processed: 10-09-2021 23:02:01
+Last entry processed: 10-09-2021 23:06:54
