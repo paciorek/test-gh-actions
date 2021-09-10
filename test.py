@@ -31,7 +31,7 @@ def main():
     """
     creds = None
 
-    creds = Credentials.from_service_account_file('secrets/service_account.json', scopes = SCOPES)
+    creds = Credentials.from_service_account_file('service_account.json', scopes = SCOPES)
     service = build('sheets', 'v4', credentials=creds)
 
     # Call the Sheets API
