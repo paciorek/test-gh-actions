@@ -45,7 +45,7 @@ def main():
         print('No data found.')
     else:
         l = len(values)
-        print('Found %s rows' % l-1)
+        print('Found %s rows' % str(l-1))
         print('Last row is: %s, %s' % (values[l-1][0], values[l-1][1]))
 
         if values[0][3] != "processed":
